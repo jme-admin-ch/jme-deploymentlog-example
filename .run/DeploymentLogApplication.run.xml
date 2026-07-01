@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="DeploymentLogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="ACTIVE_PROFILES" value="local" />
+    <module name="jme-deploymentlog-example" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="ch.admin.bit.jeap.deploymentlog.web.DeploymentLogApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,37 @@
+publiccodeYmlVersion: 0.5.0
+name: jme-deploymentlog-example
+applicationSuite: JME
+softwareVersion: 2.0.0
+releaseDate: 2026-07-01
+url: "https://github.com/jme-admin-ch/jme-deploymentlog-example.git"
+landingURL: "https://github.com/jme-admin-ch/jme"
+platforms:
+  - web
+categories:
+  - application-development
+developmentStatus: stable
+softwareType: standalone/backend
+organisation:
+  uri: https://ld.admin.ch/office/V.1.7
+  name: Federal Office of Information Technology, Systems and Telecommunication
+description:
+  en:
+    localisedName: jme-deploymentlog-example
+    shortDescription: Example project demonstrating how to use the jEAP DeploymentLog Service.
+    longDescription: >
+      This example project provides a comprehensive guide on how to integrate and utilize the jEAP DeploymentLog 
+      Service within your applications. It covers setup, configuration, and usage scenarios to help developers 
+      quickly get started and leverage the full capabilities of the service.
+    features:
+      - Demonstrates instantiation and configuration of the DeploymentLog Service and its features
+legal:
+  license: Apache-2.0
+maintenance:
+  type: internal
+  contacts:
+    - name: Federal Office of Information Technology, Systems and Telecommunication FOITT
+      email: jeap-community@bit.admin.ch
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - en

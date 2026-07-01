@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: jme-deploymentlog-test
+  main:
+    banner-mode: off
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.thymeleaf.autoconfigure.ThymeleafAutoConfiguration
+      - org.springframework.boot.micrometer.metrics.autoconfigure.MetricsAspectsAutoConfiguration
+  docker:
+    compose:
+      enabled: true
+      file: docker/docker-compose.yml
+      lifecycle-management: start-and-stop
+      skip:
+        in-tests: false
+      arguments:
+        - "--project-name=${COMPOSE_PROJECT_NAME:jme-deploymentlog-test}"
+      readiness:
+        timeout: 60s
+  jpa:
+    database: postgresql
+    show-sql: false
+    generate-ddl: false
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        default_schema: data
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  flyway:
+    default-schema: data
