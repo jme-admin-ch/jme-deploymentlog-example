@@ -1,12 +1,11 @@
 ---
-version: '3'
 services:
   # Database
-  jme-deploymentlog-db:
+  jme-deploymentlog-db-local:
     image: postgres:18.4-alpine
     ports:
       - "5432:5432"
     environment:
       - POSTGRES_USER=deploymentlog
       - POSTGRES_PASSWORD=secret
-      - POSTGRES_DB=deploymentlog-db-local
+      - POSTGRES_DB=jme-deploymentlog-db-local

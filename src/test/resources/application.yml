@@ -18,6 +18,18 @@ spring:
         - "--project-name=${COMPOSE_PROJECT_NAME:jme-deploymentlog-test}"
       readiness:
         timeout: 60s
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: org.postgresql.Driver
+    username: deploymentlog
+    password: secret
+    hikari:
+      schema: ${spring.jpa.properties.hibernate.default_schema}
+
+  flyway:
+    default-schema: data
+
   jpa:
     database: postgresql
     show-sql: false
@@ -30,5 +42,26 @@ spring:
         default_schema: data
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
-  flyway:
-    default-schema: data
+jeap:
+  deploymentlog:
+    documentation:
+      root-url: https://confluence.example.com/pages/viewpage.action?pageId=
+    documentation-generator:
+      confluence:
+        url: "https://confluence.example.com"
+        space-key: "MYSPACE"
+        root-page-id: 123456789
+        username: ""
+        password: ""
+        mock-confluence-client: true
+        deployment-history-max-show: 5
+      config:
+        remedy-change-link-root-url: "https://remedy.example.com/smartit/app/change/displayid/"
+      scheduled:
+        cron: "0 0/5 * * * *"
+    jira:
+      app-id: 123456789
+      url: https://jira.example.com
+      username: ""
+      password: ""
+      mock-jira-client: true

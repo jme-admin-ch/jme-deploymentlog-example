@@ -2,7 +2,7 @@
 
 services:
 
-  jme-archrepo-db-local:
+  jme-deploymentlog-db-local:
     ports: !reset [ ]
     labels:
       org.springframework.boot.ignore: true

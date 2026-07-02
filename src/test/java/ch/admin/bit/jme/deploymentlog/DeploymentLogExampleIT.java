@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @EnableWebSecurity
 class DeploymentLogExampleIT extends BootServiceSpringIntegrationTestBase {
 
-    private static final String SERVICE_BASE_URL = "http://localhost:8082/deploymentlog-service";
+    private static final String SERVICE_BASE_URL = "http://localhost:8080/jme-deploymentlog-service";
     private static final String TEST_SYSTEM_NAME = "JME-IT-" + UUID.randomUUID();
 
     @BeforeAll

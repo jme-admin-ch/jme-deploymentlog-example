@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://jme-deploymentlog-db-local:5432/jme-deploymentlog-db-local"
+    username: deploymentlog
+    password: secret

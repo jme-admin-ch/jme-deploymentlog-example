@@ -2,6 +2,11 @@ spring:
   application:
     name: jme-deploymentlog-service
 
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      schema: ${spring.jpa.properties.hibernate.default_schema}
   jpa:
     database: postgresql
     show-sql: false
@@ -19,4 +24,13 @@ spring:
 
 server:
   servlet:
-    context-path: /deploymentlog-service
+    context-path: /${spring.application.name}
+
+jeap:
+
+  swagger:
+    status: OPEN
+  web:
+    tls:
+      enabled: false
+

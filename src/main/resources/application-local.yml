@@ -1,18 +1,8 @@
-server:
-  port: 8082
-
 spring:
   datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    driver-class-name: org.postgresql.Driver
-    url: "jdbc:postgresql://localhost:5432/deploymentlog-db-local"
+    url: "jdbc:postgresql://localhost:5432/jme-deploymentlog-db-local"
     username: deploymentlog
     password: secret
-    hikari:
-      minimum-idle: 2
-      maximum-pool-size: 15
-      leak-detection-threshold: 120000
-      schema: ${spring.jpa.properties.hibernate.default_schema}
 
 jeap:
   deploymentlog:
@@ -37,10 +27,3 @@ jeap:
       username: ""
       password: ""
       mock-jira-client: true
-  swagger:
-    status: open
-  web:
-    tls:
-      enabled: false
-
-
