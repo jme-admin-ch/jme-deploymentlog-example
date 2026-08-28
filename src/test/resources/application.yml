@@ -44,6 +44,9 @@ spring:
 
 jeap:
   deploymentlog:
+    # This integration test covers the deployment API, not deployment flow processing.
+    flow:
+      enabled: false
     documentation:
       root-url: https://confluence.example.com/pages/viewpage.action?pageId=
     documentation-generator:
