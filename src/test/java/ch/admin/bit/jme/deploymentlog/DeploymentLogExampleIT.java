@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
+import java.util.Map;
 import java.util.UUID;
 
 import static io.restassured.RestAssured.given;
@@ -22,7 +23,8 @@ class DeploymentLogExampleIT extends BootServiceSpringIntegrationTestBase {
 
     @BeforeAll
     static void startServices() throws Exception {
-        startService(SERVICE_BASE_URL);
+        // This integration test covers the deployment API, not deployment flow processing.
+        startService(null, SERVICE_BASE_URL, Map.of("jeap.deploymentlog.flow.enabled", "false"));
     }
 
     @Test
