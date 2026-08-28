@@ -44,6 +44,9 @@ spring:
 
 jeap:
   deploymentlog:
+    # Disable flow processing for the integration test's own application context.
+    flow:
+      enabled: false
     documentation:
       root-url: https://confluence.example.com/pages/viewpage.action?pageId=
     documentation-generator:

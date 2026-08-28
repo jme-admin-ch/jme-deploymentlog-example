@@ -23,7 +23,7 @@ class DeploymentLogExampleIT extends BootServiceSpringIntegrationTestBase {
 
     @BeforeAll
     static void startServices() throws Exception {
-        // This integration test covers the deployment API, not deployment flow processing.
+        // Disable flow processing for the separately started service.
         startService(null, SERVICE_BASE_URL, Map.of("jeap.deploymentlog.flow.enabled", "false"));
     }
 
