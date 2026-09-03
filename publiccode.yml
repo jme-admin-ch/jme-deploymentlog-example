@@ -2,7 +2,7 @@ publiccodeYmlVersion: 0.5.0
 name: jme-deploymentlog-example
 applicationSuite: JME
 softwareVersion: 7.4.0
-releaseDate: 2026-09-03
+releaseDate: 2026-09-04
 url: "https://github.com/jme-admin-ch/jme-deploymentlog-example.git"
 landingURL: "https://github.com/jme-admin-ch/jme"
 platforms:
