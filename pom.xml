@@ -33,7 +33,7 @@
     </parent>
 
     <artifactId>jme-deploymentlog-example</artifactId>
-    <version>11.2.0-SNAPSHOT</version>
+    <version>11.2.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
