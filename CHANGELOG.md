@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.11.0] - 2026-10-20
+
+### Dependencies
+- **ch.admin.bit.jeap:jeap-deploymentlog-service-instance**: 16.18.0 → 16.19.0 (minor)
+
 ## [13.10.0] - 2026-10-19
 
 ### Dependencies
